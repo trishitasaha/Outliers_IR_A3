@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# data/processed is intentionally NOT ignored: the generated files are shared
+# with Tasks 2-4. Regenerate them with `python main.py`.

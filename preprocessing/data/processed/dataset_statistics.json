@@ -1,0 +1,317 @@
+{
+  "definitions": {
+    "token_representation_for_lengths": "*_tokens (normalized tokens, stopwords retained, no stemming)",
+    "document_length": "number of tokens in body_tokens; 'full_document_length' sums all four fields",
+    "vocabulary": "distinct tokens over all four document fields of all documents, per representation",
+    "token_frequency": "corpus counts over all four document fields"
+  },
+  "documents": {
+    "num_documents": 1400,
+    "num_unique_doc_ids": 1400,
+    "empty_field_counts": {
+      "title": 2,
+      "author": 53,
+      "bibliography": 70,
+      "body": 2
+    },
+    "num_documents_with_any_missing_field": 73,
+    "completely_empty_doc_ids": [
+      471,
+      995
+    ],
+    "title_length_tokens": {
+      "mean": 11.545,
+      "median": 11.0,
+      "min": 0,
+      "max": 40
+    },
+    "author_length_tokens": {
+      "mean": 4.261,
+      "median": 3.0,
+      "min": 0,
+      "max": 33
+    },
+    "bibliography_length_tokens": {
+      "mean": 5.242,
+      "median": 5.0,
+      "min": 0,
+      "max": 20
+    },
+    "body_length_tokens": {
+      "mean": 157.589,
+      "median": 139.0,
+      "min": 0,
+      "max": 652
+    },
+    "full_document_length_tokens": {
+      "mean": 178.637,
+      "median": 159.0,
+      "min": 0,
+      "max": 685
+    }
+  },
+  "queries": {
+    "num_queries": 225,
+    "num_unique_canonical_query_ids": 225,
+    "num_unique_original_query_ids": 225,
+    "original_query_id_range": [
+      "001",
+      "365"
+    ],
+    "query_length_tokens": {
+      "mean": 16.964,
+      "median": 16,
+      "min": 5,
+      "max": 44
+    },
+    "query_length_tokens_no_stop": {
+      "mean": 9.987,
+      "median": 9,
+      "min": 4,
+      "max": 23
+    },
+    "query_vocabulary_size": 975,
+    "query_vocabulary_size_stemmed": 728
+  },
+  "relevance": {
+    "num_original_qrel_rows": 1837,
+    "num_ordinary_relevance_rows": 1612,
+    "num_special_rows": 225,
+    "grade_counts": {
+      "-1": 225,
+      "1": 128,
+      "2": 387,
+      "3": 734,
+      "4": 363
+    },
+    "num_binary_relevant": 1612,
+    "num_binary_non_relevant": 0,
+    "num_queries_with_judgments": 225,
+    "num_distinct_judged_documents": 830,
+    "positive_judgments_per_query": {
+      "mean": 7.164,
+      "median": 6,
+      "min": 1,
+      "max": 39
+    }
+  },
+  "splits": {
+    "train": {
+      "num_queries": 157,
+      "num_judgments": 1144,
+      "num_positive_judgments": 1144,
+      "mean_positive_per_query": 7.287,
+      "queries_without_positive": 0,
+      "grade_counts": {
+        "1": 93,
+        "2": 285,
+        "3": 510,
+        "4": 256
+      }
+    },
+    "val": {
+      "num_queries": 34,
+      "num_judgments": 230,
+      "num_positive_judgments": 230,
+      "mean_positive_per_query": 6.765,
+      "queries_without_positive": 0,
+      "grade_counts": {
+        "1": 19,
+        "2": 45,
+        "3": 110,
+        "4": 56
+      }
+    },
+    "test": {
+      "num_queries": 34,
+      "num_judgments": 238,
+      "num_positive_judgments": 238,
+      "mean_positive_per_query": 7.0,
+      "queries_without_positive": 0,
+      "grade_counts": {
+        "1": 16,
+        "2": 57,
+        "3": 114,
+        "4": 51
+      }
+    }
+  },
+  "vocabulary": {
+    "tokens": 11217,
+    "tokens_no_stop": 11096,
+    "stemmed_tokens": 8405,
+    "per_field_tokens": {
+      "title": 1976,
+      "author": 1222,
+      "bibliography": 1509,
+      "body": 9161
+    }
+  },
+  "token_frequency": {
+    "total_tokens": 250092,
+    "total_tokens_no_stop": 149757,
+    "hapax_legomena_tokens": 4998,
+    "numeric_token_types": 1739,
+    "hyphenated_token_types": 1702,
+    "top_25_tokens_no_stop": [
+      [
+        "flow",
+        2061
+      ],
+      [
+        "pressure",
+        1245
+      ],
+      [
+        "boundary",
+        1076
+      ],
+      [
+        "number",
+        1023
+      ],
+      [
+        "mach",
+        906
+      ],
+      [
+        "results",
+        897
+      ],
+      [
+        "j",
+        892
+      ],
+      [
+        "layer",
+        880
+      ],
+      [
+        "theory",
+        860
+      ],
+      [
+        "method",
+        735
+      ],
+      [
+        "shock",
+        653
+      ],
+      [
+        "supersonic",
+        623
+      ],
+      [
+        "effects",
+        597
+      ],
+      [
+        "heat",
+        595
+      ],
+      [
+        "surface",
+        594
+      ],
+      [
+        "obtained",
+        542
+      ],
+      [
+        "solution",
+        528
+      ],
+      [
+        "given",
+        523
+      ],
+      [
+        "temperature",
+        520
+      ],
+      [
+        "laminar",
+        516
+      ],
+      [
+        "equations",
+        509
+      ],
+      [
+        "r",
+        507
+      ],
+      [
+        "velocity",
+        499
+      ],
+      [
+        "wing",
+        488
+      ],
+      [
+        "body",
+        472
+      ]
+    ]
+  },
+  "parse_warnings": [
+    "cran.all.1400 line 7322 (record 240): repeated '.A' marker; following text kept in the currently open field 'body'",
+    "cran.all.1400 line 7324 (record 240): repeated '.B' marker; following text kept in the currently open field 'body'",
+    "cran.all.1400 line 16283 (record 576): repeated '.W' marker; following text kept in the currently open field 'body'",
+    "cran.all.1400 line 16320 (record 578): repeated '.W' marker; following text kept in the currently open field 'body'",
+    "cranqrel line 316 (record 40): irregular internal whitespace: '40 85  3 '"
+  ],
+  "query_id_mapping": {
+    "num_queries_in_cran_qry": 225,
+    "qrel_query_id_range": [
+      1,
+      225
+    ],
+    "num_distinct_qrel_query_ids": 225,
+    "qrel_ids_contiguous_1_to_n": true,
+    "original_ids_increasing": true,
+    "mapping_rule": "query_id = 1-based position of the record in cran.qry"
+  },
+  "relevance_policy": {
+    "relevant_grades": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "non_relevant_grades": [
+      5
+    ],
+    "excluded_special_grades": [
+      -1
+    ]
+  },
+  "preprocessing": {
+    "unicode_normalization": "NFKC",
+    "lowercase": true,
+    "control_characters": "format chars removed, other control chars -> space",
+    "whitespace": "tabs/newlines -> space, runs collapsed, ends stripped",
+    "tokenizer": "regex [^\\W_]+(?:-[^\\W_]+|(?<=\\d)[.,]\\d+|'[^\\W_]+)*",
+    "possessive_s_removed": true,
+    "split_hyphens": false,
+    "stopwords": "embedded NLTK English list (179 words)",
+    "stemmer": "nltk PorterStemmer (NLTK_EXTENSIONS mode), applied to tokens_no_stop"
+  },
+  "random_seed": 42,
+  "query_mapping_evidence": {
+    "positional": {
+      "num_queries_scored": 225,
+      "mean_query_term_coverage": 0.7245
+    },
+    "identity_original_id": {
+      "num_queries_scored": 152,
+      "mean_query_term_coverage": 0.3302
+    },
+    "random_permutation": {
+      "num_queries_scored": 225,
+      "mean_query_term_coverage": 0.3465
+    }
+  }
+}

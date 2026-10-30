@@ -1,0 +1,35 @@
+query_id,original_query_id,query_text
+8,013,what methods -dash exact or approximate -dash are presently available for predicting body pressures at angle of attack.
+24,049,what are the factors which influence the time required to invert large structural matrices .
+26,051,what is a single approximate formula for the displacement thickness of a laminar boundary layer in compressible flow on a flat plate .
+35,061,are there any papers dealing with acoustic wave propagation in reacting gases .
+49,084,"can the three-point boundary-value problem for the blasius equation be integrated numerically,  using suitable transformations,  without iteration on the boundary conditions ."
+52,087,what is the available information pertaining to the effect of slight rarefaction on boundary layer flows (the ?slip? effect) .
+60,101,"is there any simple,  but practical,  method for numerical integration of the mixing problem (i.e. the blasius problem with three-point boundary conditions) ."
+68,109,what possible techniques are available for computing the injection distribution corresponding to an isothermal transpiration cooled hemisphere .
+69,110,what is known regarding asymptotic solutions to the exact boundary layer equations .
+70,111,previous solutions to the boundary layer similarity equations .
+71,112,experimental results on hypersonic viscous interaction .
+78,121,has anyone explained the kink in the surge line of a multi-stage axial compressor .
+83,130,what is the present state of the theory of quasi-conical flows .
+84,131,references on the methods available for accurately estimating aerodynamic heat transfer to conical bodies for both laminar and turbulent flow .
+96,145,has anyone investigated the unsteady lift distributions on finite wings in subsonic flow .
+104,154,can the load deformation characteristics of a beam be obtained with the material being inelastic and a non uniform temperature being present .
+108,158,what data is there on the fatigue of structures under acoustic loading .
+110,161,can increasing the edge loading of a plate beyond the critical value for buckling change the buckling mode .
+120,175,are previous analyses of circumferential thermal buckling of circular cylindrical shells unnecessarily involved or even inaccurate due to the assumed forms of buckling mode .
+123,181,has any work been done on determining the nature of compressible viscous flow in a straight channel .
+136,205,what are the results for the creep buckling of round tubes under external pressure .
+158,233,what are the available properties of high-temperature air .
+161,245,is there an integral method to give a single and sufficiently accurate method of calculating the laminar separate point for various incompressible and compressible boundary layers with zero heat transfer .
+178,269,has a criterion been established for determining the axial compressor choking line .
+180,273,how does scale height vary with altitude in an atmosphere .
+184,283,work on small-oscillation re-entry motions .
+186,285,"how can wing-body,  flow field interference effects be approximated rationally ."
+197,300,how is fatigue damage estimated using the normal long-hand method .
+200,304,"are asymptotic methods sufficiently accurate in the determination of pre-buckling stresses in torispherical shells,  or must we resort to numerical methods ."
+208,327,what is the effect of the shape of the drag polar of a lifting spacecraft on the amount of reduction in maximum deceleration obtainable by continuously varying the aerodynamic coefficients during re-entry .
+209,331,what are the physical significance and characteristics of separated laminar and turbulent boundary layer flows .
+215,339,is it possible to predict the shape of a shroud which will allow simulation of the nose region flow field for a sphere in hypersonic flow .
+222,355,has anyone investigated the shear buckling of stiffened plates .
+225,365,what design factors can be used to control lift-drag ratios at mach numbers above 5 .

@@ -1,0 +1,124 @@
+CRANFIELD TASK 1 - DATA VALIDATION REPORT
+========================================================================
+Generated (UTC): 2026-10-30 17:45:18
+Checks run: 35   passed: 30   critical failures: 0   warnings: 5
+OVERALL RESULT: PASS
+
+Legend: [PASS] check satisfied | [FAIL] critical integrity violation |
+        [WARN] irregularity in the raw data, kept unchanged
+
+DOCUMENTS
+------------------------------------------------------------------------
+[PASS] documents.csv has exactly 1400 rows
+       rows = 1400
+[PASS] columns are doc_id, title, author, bibliography, body
+[PASS] document IDs are unique integers
+[PASS] documents.csv equals a fresh parse of cran.all.1400 (no lost or altered text)
+[WARN] no document is completely empty
+       completely empty documents (kept): [471, 995]
+[WARN] no structural irregularities in cran.all.1400
+       cran.all.1400 line 7322 (record 240): repeated '.A' marker; following text kept in the currently open field 'body'
+       cran.all.1400 line 7324 (record 240): repeated '.B' marker; following text kept in the currently open field 'body'
+       cran.all.1400 line 16283 (record 576): repeated '.W' marker; following text kept in the currently open field 'body'
+       cran.all.1400 line 16320 (record 578): repeated '.W' marker; following text kept in the currently open field 'body'
+  - Empty field counts: title=2, author=53, bibliography=70, body=2
+
+QUERIES
+------------------------------------------------------------------------
+[PASS] queries.csv has exactly 225 rows
+       rows = 225
+[PASS] columns are query_id, original_query_id, query_text
+[PASS] canonical query IDs are exactly 1..N in file order
+[PASS] original query IDs are unique and keep their zero padding (e.g. '001')
+       first IDs: ['001', '002', '004', '008']
+[PASS] queries.csv equals a fresh parse of cran.qry (same IDs, mapping and text)
+[WARN] no query text contains the full text of another query
+       query_id 124 (original 182) contains the full text of query_id 122 (original 177)
+       (kept unchanged; appears to be a copy error in cran.qry)
+[PASS] no structural irregularities in cran.qry
+
+RELEVANCE JUDGMENTS
+------------------------------------------------------------------------
+[PASS] cranqrel has 1837 well-formed rows (3 integer fields, known code)
+       rows = 1837
+[PASS] relevance.csv + relevance_special.csv contain exactly the raw rows
+       1612 ordinary + 225 special = 1837 (raw 1837)
+[PASS] no duplicate query-document pairs
+[PASS] all referenced doc_ids and query_ids exist
+[PASS] relevance.csv holds only grades 1-5; relevance_special.csv holds only code -1
+[PASS] binary_relevance follows the policy (relevant grades = [1, 2, 3, 4])
+[WARN] no judgment refers to a completely empty document
+       query 125 -> doc 995 (grade 3)
+[WARN] no formatting irregularities in cranqrel
+       cranqrel line 316 (record 40): irregular internal whitespace: '40 85  3 '
+       (parsed as whitespace-separated; values unaffected)
+  - Grade counts (all rows): -1: 225, 1: 128, 2: 387, 3: 734, 4: 363
+  - Special -1 rows: 225 across 225 queries; kept separately, NOT treated as negatives. (query_id:doc_id)
+    1:486, 2:486, 3:485, 4:488, 5:488, 6:491, 7:492, 8:492, 9:534,
+    10:493, 11:495, 12:624, 13:496, 14:496, 15:497, 16:498, 17:498,
+    18:498, 19:499, 20:500, 21:502, 22:502, 23:892, 24:756, 25:511,
+    26:511, 27:512, 28:512, 29:513, 30:513, 31:751, 32:752, 33:516,
+    34:516, 35:517, 36:518, 37:519, 38:536, 39:536, 40:536, 41:520,
+    42:521, 43:521, 44:524, 45:525, 46:525, 47:525, 48:526, 49:527,
+    50:528, 51:528, 52:528, 53:531, 54:123, 55:538, 56:753, 57:753,
+    58:754, 59:754, 60:322, 61:539, 62:539, 63:539, 64:627, 65:388,
+    66:388, 67:388, 68:628, 69:540, 70:540, 71:540, 72:629, 73:541,
+    74:541, 75:630, 76:630, 77:630, 78:543, 79:544, 80:544, 81:631,
+    82:632, 83:633, 84:546, 85:546, 86:755, 87:547, 88:548, 89:757,
+    90:757, 91:757, 92:758, 93:635, 94:635, 95:635, 96:637, 97:637,
+    98:638, 99:639, 100:760, 101:760, 102:729, 103:761, 104:762, 105:764,
+    106:764, 107:640, 108:640, 109:766, 110:766, 111:894, 112:641,
+    113:643, 114:895, 115:184, 116:896, 117:896, 118:896, 119:897,
+    120:769, 121:769, 122:898, 123:941, 124:941, 125:942, 126:942,
+    127:944, 128:945, 129:945, 130:948, 131:950, 132:950, 133:950,
+    134:951, 135:951, 136:951, 137:952, 138:953, 139:953, 140:954,
+    141:954, 142:954, 143:954, 144:955, 145:955, 146:955, 147:956,
+    148:956, 149:957, 150:1062, 151:1062, 152:1062, 153:1063, 154:1063,
+    155:1065, 156:1065, 157:1006, 158:1006, 159:1066, 160:1071, 161:489,
+    162:489, 163:492, 164:503, 165:504, 166:504, 167:509, 168:750,
+    169:750, 170:893, 171:516, 172:527, 173:532, 174:533, 175:941,
+    176:542, 177:543, 178:543, 179:633, 180:548, 181:942, 182:634,
+    183:758, 184:639, 185:948, 186:1188, 187:763, 188:640, 189:767,
+    190:894, 191:894, 192:641, 193:641, 194:642, 195:642, 196:184,
+    197:768, 198:769, 199:957, 200:1071, 201:1140, 202:1285, 203:1285,
+    204:1285, 205:1287, 206:1290, 207:1290, 208:1291, 209:1292, 210:1145,
+    211:1145, 212:1146, 213:1146, 214:1294, 215:535, 216:506, 217:1191,
+    218:1191, 219:1191, 220:1182, 221:1182, 222:1396, 223:1396, 224:1286,
+    225:1188
+  - Documents not listed for a query are UNJUDGED, not known to be non-relevant.
+
+PREPROCESSING
+------------------------------------------------------------------------
+[PASS] processed files have the required columns
+[PASS] no documents lost (same doc_ids, same order)
+       rows = 1400
+[PASS] no queries lost (same query_id and original_query_id, same order)
+       rows = 225
+[PASS] every token cell is a valid JSON array of strings
+[PASS] stored tokens equal a fresh run of the same preprocessing on the original text
+[PASS] repeated term occurrences are preserved (term frequency intact)
+       1398 documents have repeated body tokens
+[PASS] no query has an empty (no-stopword) token list
+  - Documents with empty token lists: title=2, author=53, bibliography=70, body=2
+
+TRAIN/VALIDATION/TEST SPLIT
+------------------------------------------------------------------------
+[PASS] split files have columns ['query_id', 'original_query_id', 'query_text']
+[PASS] no query appears in more than one split
+[PASS] every query is in exactly one split, with the same text as queries.csv
+[PASS] split sizes follow 70/15/15
+       sizes = {'train': 157, 'val': 34, 'test': 34}
+[PASS] re-running the split with seed 42 reproduces the saved files
+  - Documents are NOT split: every split is searched against the full 1,400-document corpus.
+
+QUERY ID MAPPING
+------------------------------------------------------------------------
+[PASS] qrels use exactly the IDs 1..225 (same count as cran.qry records)
+       distinct qrel query IDs = 225, range 1..225
+[PASS] positional mapping matches relevant documents far better than the alternatives
+  - Mean coverage of query stems by their relevant documents' title+body stems:
+    positional = 0.7245
+    identity_original_id = 0.3302
+    random_permutation = 0.3465
+  - The positional correspondence is not stated in the distribution files;
+    it is an assumption supported by this evidence.
