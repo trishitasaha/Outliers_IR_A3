@@ -1,0 +1,11 @@
+Soft Weighted Zone Scoring - Test Results
+
+Weights: {'title': 4, 'author': 0, 'bibliography': 0, 'body': 3}
+Normalized weights: {'title': 0.5714285714285714, 'author': 0.0, 'bibliography': 0.0, 'body': 0.42857142857142855}
+Cutoff: 10
+
+queries_evaluated: 34
+queries_with_fewer_than_k_results: 0
+precision_at_k: 0.20294117647058824
+recall_at_k: 0.32980811960050715
+f1_at_k: 0.22577042249866555
