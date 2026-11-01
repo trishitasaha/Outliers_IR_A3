@@ -1,0 +1,56 @@
+{
+  "relevant_max_grade": 4,
+  "neg_ratio": 20,
+  "seed": 42,
+  "feature_names": [
+    "query_term_number",
+    "query_term_ratio",
+    "stream_length",
+    "idf",
+    "tf_sum",
+    "tf_min",
+    "tf_max",
+    "tf_mean",
+    "tf_variance",
+    "normalized_tf_sum",
+    "normalized_tf_min",
+    "normalized_tf_max",
+    "normalized_tf_mean",
+    "normalized_tf_variance",
+    "tf_idf_sum",
+    "tf_idf_min",
+    "tf_idf_max",
+    "tf_idf_mean",
+    "tf_idf_variance",
+    "boolean_model",
+    "vector_space_model",
+    "bm25"
+  ],
+  "splits": {
+    "train": {
+      "queries": 157,
+      "rows": 219643,
+      "positives": 1144,
+      "positive_rate": 0.005208451896941855,
+      "queries_without_positive": 0
+    },
+    "val": {
+      "queries": 34,
+      "rows": 47566,
+      "positives": 230,
+      "positive_rate": 0.004835386620695455,
+      "queries_without_positive": 0
+    },
+    "test": {
+      "queries": 34,
+      "rows": 47566,
+      "positives": 238,
+      "positive_rate": 0.005003573981415297,
+      "queries_without_positive": 0
+    }
+  },
+  "train_sampled": {
+    "rows": 24024,
+    "positives": 1144
+  }
+}
