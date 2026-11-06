@@ -98,7 +98,25 @@ pip install requirements.txt
 
 ## 6. Run the Project in the Correct Order
 
-### Interactive query tester (`outliers_testA.py`)
+### Data Preprocessing and Feature Extraction
+
+Navigate to the `outliers_preprocesing_feature_extraction` folder inside `outliers_SVM_MethodB`.
+
+Run the following scripts in order:
+
+```bash
+python outliers_preprocess.py
+python outliers_build_dataset.py
+```
+
+- `outliers_preprocess.py`: Performs preprocessing of the raw Cranfield documents and queries.
+- `outliers_build_dataset.py`: Generates the query-document feature dataset containing the 22 specified features.
+
+The input files are stored in the `outliers_raw` folder. The generated outputs are saved in the following folders:
+- `outliers_processed`: Contains preprocessed documents and queries.
+- `outliers_features`: Contains the extracted feature datasets.
+
+### How to Run (Method A – `outliers_testA.py`)
 
 Run this tester from the project root:
 
@@ -130,7 +148,7 @@ python3 outliers_preprocesing_feature_extraction/outliers_preprocess.py
 
 The tester is interactive and currently does not accept `--query`, `--query-file`, `--top-k`, or `--output` options.
 
-### How to Run (Method B – Ranking SVM)
+### How to Run (Method B – `outliers_testB.py`)
 
 **Run with a Single Query**
 
