@@ -23,32 +23,8 @@ Python 3.9+ is specified by the preprocessing, feature extraction and feature ma
 
 This diagram summarizes the complete workflow.
 
-```text
-                   Cranfield Dataset
-         Documents, queries and relevance judgments
-                             |
-                             v
-                 Part 1: Dataset Preparation
-            Cleaning, tokenization, stemming and splits
-                             |
-[outliers_SVM_MethodB/outliers_preprocesing_feature_extraction]
-                +------------+------------+
-                |                         |
-                v                         v
-      Part 2: Boolean Zone       Part 3: Feature Extraction
-            Scoring                    (22 features)
-           Method A                   Method B
-                                    [outliers_experiments/feature_extraction]
-[boolean_weighted]                        |
-                                          v
-                             Part 3b: Feature Matrix
-                                 Construction
-                         [outliers_experiments/feature_matrix]
-                                          |
-                                          v
-                             Part 4: Linear SVM
-                             Training and Ranking
-```
+![Flowdiag](Flow.png)
+
 
 ## 3. Clone the Repository
 
